@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mansizweb</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.txt"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+
+  <button type="button" name="fotolahgays" class="btn btn-secondary" onclick="moving()">fotogays</button>
+
+  <div id="animate">
+    <img src="https://cdf.orami.co.id/unsafe/cdn-cas.orami.co.id/parenting/images/wisata-bromo.width-800.jpegquality-80.jpg" alt="" srcset="">
+  </div>
+
+  <script>
+    function moving()
+    {
+      var elem=document.getElementById("animate");
+      var pos=0;
+      var id=setInterval(frame, 5);
+      function frame(){
+        if(pos == 350)
+        {
+          clearInterval(id);
+        }else{
+          pos++;
+          elen.style.top=pos +'px';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
